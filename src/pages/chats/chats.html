@@ -6,11 +6,28 @@
 </ion-header>
 
 <ion-content padding>
-     
+    <ion-content class="card-background-page">
+        <ion-tabs>
+            <ion-tab tabIcon="contact" [root]="tab1"></ion-tab>
+            <ion-tab tabIcon="compass" [root]="tab2"></ion-tab>
+            <ion-tab tabIcon="analytics" [root]="tab3"></ion-tab>
+            <ion-tab tabIcon="settings" [root]="tab4"></ion-tab>
+          </ion-tabs>
+          <!-- <ion-card>
+            
+            <div class="card-title">whatsap</div>
+            <div class="card-subtitle" align="right"><ion-icon name="search" isActive="false"></ion-icon></div>
+            <div class="card-subtitle" align="right"><ion-icon name="search" isActive="false"></ion-icon></div>
+            <div class="card-subtitle" align="left"><ion-icon name="camera" isActive="false"></ion-icon></div>
+            <div class="card-subtitle" align="left">chats</div>
+            <div class="card-subtitle" align="middle">status</div>
+            <div class="card-subtitle" align="right">calls</div>
+          </ion-card> -->
+ <ion-card>
     <ion-card-header>
     Whatsap
     </ion-card-header>
-  
+  </ion-card>
     <!-- <ion-list>
       <button ion-item>
         <ion-icon name="cart" item-start></ion-icon>

@@ -1,3 +1,11 @@
 page-chats {
 
-}
+    .card-background-page {
+        
+          ion-card {
+            // position: relative;
+            // text-align: center;
+            color:green($color: #000000);
+          }
+        }
+    }   
