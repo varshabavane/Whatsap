@@ -7,22 +7,39 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ChatsPage } from '../pages/chats/chats';
+import { CaameraPage } from '../pages/caamera/caamera';
+import { CallsPage } from '../pages/calls/calls';
+import { StausPage } from '../pages/staus/staus';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
     MyApp,
+    TabsPage,
     HomePage,
-    ChatsPage
+    ChatsPage,
+    CaameraPage,
+    CallsPage,
+    StausPage
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      tabsPlacement: 'top',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ChatsPage
+    ChatsPage,
+    CaameraPage,
+    CallsPage,
+    StausPage,
+    TabsPage
+
+
   ],
   providers: [
     StatusBar,
