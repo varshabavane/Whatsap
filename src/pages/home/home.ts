@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ChatsPage } from '../chats/chats';
+import { TabsPage} from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,7 @@ export class HomePage {
 
   }
   whatsap(){
-     this.navCtrl.push(ChatsPage);
+     this.navCtrl.push(TabsPage);
   }
   
 }
