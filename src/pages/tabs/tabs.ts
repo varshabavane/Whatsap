@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {}
 import { CaameraPage } from '../caamera/caamera';
 import { StausPage } from '../staus/staus';
 import { CallsPage } from '../calls/calls';
