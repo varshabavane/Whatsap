@@ -15,6 +15,7 @@ import { ChatsPage } from '../chats/chats';
 @Component({
   selector: 'page-tabs',
   templateUrl: 'tabs.html',
+ 
 })
 export class TabsPage {
 
