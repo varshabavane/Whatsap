@@ -1,3 +1,6 @@
+import { CallsmorePage } from './../pages/callsmore/callsmore';
+import { StatusmorePage } from './../pages/statusmore/statusmore';
+import { ChatmorePage } from './../pages/chatmore/chatmore';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -20,7 +23,11 @@ import { TabsPage } from '../pages/tabs/tabs';
     ChatsPage,
     CaameraPage,
     CallsPage,
-    StausPage
+    StausPage,
+    ChatmorePage,
+    StatusmorePage,
+    CallsmorePage
+
     
   ],
   imports: [
@@ -37,7 +44,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     CaameraPage,
     CallsPage,
     StausPage,
-    TabsPage
+    TabsPage,ChatmorePage,
+    StatusmorePage,CallsmorePage
 
 
   ],

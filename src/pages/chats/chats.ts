@@ -1,5 +1,7 @@
+import { ChatmorePage } from './../chatmore/chatmore';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PopoverController } from 'ionic-angular';
 
 /**
  * Generated class for the ChatsPage page.
@@ -15,11 +17,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ChatsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pop:PopoverController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatsPage');
   }
-
+  chatMorePop(){
+    let popover = this.pop.create(ChatmorePage);
+    popover.present();
+    // alert("chatsetting")
+  }
 }

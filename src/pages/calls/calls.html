@@ -6,16 +6,26 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Whatsapp</ion-title>
-  </ion-navbar>
-
-</ion-header>
+    <ion-navbar color="primary">
+        
+      <ion-title>whatsap</ion-title>
+       <ion-buttons end>
+          <button ion-button icon-only (click)="popOver()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-buttons end>
+          <button ion-button icon-only>
+            <ion-icon name="more"></ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
 
 
 <ion-content padding>
     <P>to start calling  contacts who have Whatsapp , tap at the bottom of your screen</P>
     <ion-fab right bottom>
-        <button ion-fab color:green><ion-icon name="md-calls"></ion-icon></button>
+        <button ion-fab color="secondary"><ion-icon name="md-call"></ion-icon></button>
     </ion-fab>
 </ion-content>
