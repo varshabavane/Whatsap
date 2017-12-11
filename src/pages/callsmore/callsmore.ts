@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PopoverController } from 'ionic-angular/components/popover/popover-controller';
 
 /**
  * Generated class for the CallsmorePage page.
@@ -14,7 +15,8 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CallsmorePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public pop:PopoverController)
+  {
   }
 
   ionViewDidLoad() {

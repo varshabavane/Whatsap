@@ -22,8 +22,8 @@ export class CallsPage {
     console.log('ionViewDidLoad CallsPage');
   }
   popOver(){
-    // let popover = this.pop.create(CallsmorePage);
-    // popover.present();
+    let popover = this.pop.create(CallsmorePage);
+    popover.present();
     alert("chatsetting");
   }
 }
