@@ -15,15 +15,15 @@ import { NavController, NavParams, PopoverController } from 'ionic-angular';
 })
 export class CallsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public pop:PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pop: PopoverController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CallsPage');
   }
-  popOver(){
+  popOver() {
+    
     let popover = this.pop.create(CallsmorePage);
     popover.present();
-    alert("chatsetting");
   }
 }
